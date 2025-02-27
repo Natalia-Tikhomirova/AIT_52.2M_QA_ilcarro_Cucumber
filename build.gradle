@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.29.0'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.21.1'
+    implementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.21.1'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.9.3'
+    implementation 'org.slf4j:slf4j-nop:2.0.7' // зависимость от SLF4J
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21)) // Явно задаем Java 21
+    }
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty "cucumber.junit-platform-engine.enabled", "true"
+}
+
+
+
