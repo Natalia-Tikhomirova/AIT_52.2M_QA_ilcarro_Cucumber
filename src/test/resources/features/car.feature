@@ -6,11 +6,12 @@ Feature: Adding a car
     And the user enters valid data
     And the user presses the Yalla button
     Then the user checks the display of the message about the successful login
-    And the user clicks on "Ok" in the success popup
-    And the user clicks on "Let the car work"
+
 
   @AddCar
   Scenario: Adding a car with valid data
+    And the user clicks on "Ok" in the success popup
+    And the user clicks on "Let the car work"
     And the user enters the location "Haifa, Israel"
     And the user selects address "Haifa, Israel" from the dropdown
     And the user fills in car details:
