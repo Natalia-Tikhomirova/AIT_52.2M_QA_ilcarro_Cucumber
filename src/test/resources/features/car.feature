@@ -23,4 +23,4 @@ Feature: Adding a car
     And the user enters car class "A"
     And the user enters registration number "AB128CD"
     And the user enters price "1000"
-    And the user clicks on "Submit" button
+    Then the user clicks on "Submit" button
