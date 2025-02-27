@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 //      pretty: выводит шаги тестов в понятном для чтения формате в консоль.
                 //      html:target/cucumber-reports: создаёт HTML-отчёт по результатам тестирования в папке target/cucumber-reports
                 plugin = {"pretty", "html:target/cucumber-reports.html"},
-                tags = "@Login or @InvalidPassword" // указываем какой тест запускаем
+                tags = "@Login or @InvalidPassword or @AddCar" // указываем какой тест запускаем
         )
 
 public class TestRunner {
