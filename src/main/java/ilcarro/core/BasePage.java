@@ -41,7 +41,7 @@ public class BasePage {
         driver.manage().window().setPosition(new Point(2500, 0));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public boolean isElementPresent(WebElement element) {

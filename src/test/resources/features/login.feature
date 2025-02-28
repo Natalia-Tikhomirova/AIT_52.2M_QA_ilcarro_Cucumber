@@ -6,7 +6,7 @@ Feature: Login
 
 
   @Login
-  Scenario: Successful user login
+  Scenario: Successful user login 1
     And the user clicks on the login link
     And the user enters valid data
     And the user presses the Yalla button
@@ -15,9 +15,9 @@ Feature: Login
 
 
   @LoginWithString
-  Scenario: Successful user login
+  Scenario: Successful user login 2
     And the user clicks on the login link
-    And The user enters the valid data "test_qa@gmail.com" and "password@1"
+    And The user enters the valid data "test_qa@gmail.com" and "Password@1"
     And the user presses the Yalla button
     Then the user checks the display of the message about the successful login
     And the user closes the browser
